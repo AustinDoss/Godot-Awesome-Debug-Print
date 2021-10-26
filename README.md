@@ -3,7 +3,11 @@ Inspired by https://github.com/gruns/icecream
 
 Better debug information using `ad.p(arg)` rather than `print(arg)`
 
-Awesome Debug returns the input argument so it can be dropped into existing code without issue.
+Provides the context surrounding your awesome debug print statements to make debug and cleanup easier
+
+Unix timestamp, type information, value, stack information, line number
+
+Awesome Debug returns the input argument so it can be wrapped around existing code without issue
 
 # Installation
 Godot Awesome Debug Print needs to be enabled as a [singleton](https://docs.godotengine.org/en/stable/getting_started/step_by_step/singletons_autoload.html) with name "ad"
@@ -31,3 +35,5 @@ ad.d("very important number", myNumber)
 Turn off each debug print with `ad.off(arg)` or `ad.off_d(description, arg)`
 
 Enable and disable chunks of debug prints with `ad.enable()` and `ad.disable()`
+
+Awesome Debug continues to return arguments when disabled or off
