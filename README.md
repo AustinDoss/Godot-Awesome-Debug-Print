@@ -2,6 +2,7 @@
 Inspired by https://github.com/gruns/icecream
 
 Better debug information using `ad.p(arg)` rather than `print(arg)`
+
 Awesome Debug returns the input argument so it can be dropped into existing code without issue.
 
 # Installation
